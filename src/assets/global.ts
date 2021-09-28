@@ -17,7 +17,14 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: #363f5f;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    color: #FFF;
+    margin: 30px;
   }
+  
   body, input, textarea, button {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
