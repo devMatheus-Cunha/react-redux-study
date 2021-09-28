@@ -9,6 +9,7 @@ import { GlobalStyle } from "./assets/global";
 function App() {
   return (
     <>
+    <h5>Exercpicio React-Redux</h5>
       <Card />
       <GlobalStyle />
     </>
