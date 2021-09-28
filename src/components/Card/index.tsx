@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { ReactNode } from "react";
 
-import { Container } from './styles';
+// styles
+import { Container, Header, Content } from "./styles";
 
-const Card: React.FC = () => {
+// interface
+interface ICardProps {
+  title?: string;
+  colorHeader: string;
+  colorContent: string;
+  children?: ReactNode;
+}
+
+const Card = ({ title, children, colorHeader, colorContent }: ICardProps) => {
+
   return (
     <Container>
-      Card
+      <Header activeColor={colorHeader}>
+        <span>{title}</span>
+      </Header>
+      <Content activeColor={colorContent}>{children}</Content>
     </Container>
   );
-}
+};
 
 export default Card;
