@@ -6,19 +6,18 @@ import { Container, Header, Content } from "./styles";
 // interface
 interface ICardProps {
   title?: string;
-  colorHeader: string;
-  colorContent: string;
+  colors: string;
   children?: ReactNode;
 }
 
-const Card = ({ title, children, colorHeader, colorContent }: ICardProps) => {
+const Card = ({ title, children, colors }: ICardProps) => {
 
   return (
     <Container>
-      <Header activeColor={colorHeader}>
+      <Header activeColor={colors}>
         <span>{title}</span>
       </Header>
-      <Content activeColor={colorContent}>{children}</Content>
+      <Content activeColor={colors}>{children}</Content>
     </Container>
   );
 };

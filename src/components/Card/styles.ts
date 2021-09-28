@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { transparentize } from "polished"
+
 
 export const Container = styled.div`
   margin-top: 1.5rem;
@@ -29,6 +31,6 @@ flex: 1;
 padding: 20px;
 font-size: 20px;
 
-background: ${(props) => (props.activeColor)};
+background: ${(props) => (transparentize(0.7, props.activeColor))};
 
 `;

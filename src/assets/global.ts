@@ -21,8 +21,9 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     text-align: center;
     font-size: 2rem;
-    color: #FFF;
-    margin: 30px;
+    font-family: Oswald;
+  color: #FFF;
+  margin: 30px;
   }
   
   body, input, textarea, button {
