@@ -10,12 +10,12 @@ function App() {
   return (
     <>
       <h5>Exercpicio React-Redux</h5>
-      <Card title="Card" colorHeader="red" colorContent="pink">
-        Ola familia
-      </Card>
-      <Card colorContent="blue" colorHeader="green" title="Card">
-        Ola familia
-      </Card>
+        <Card title="Card" colors="red">
+          Ola familia
+        </Card>
+        <Card colors="blue" title="Card">
+          Ola familia
+        </Card>
       <GlobalStyle />
     </>
   );
