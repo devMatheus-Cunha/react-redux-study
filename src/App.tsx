@@ -1,8 +1,10 @@
 import React from "react";
 
 // components
-import Card from "./components/Card";
 import Interval from "./components/Interval";
+import Draw from "./components/Draw";
+import Media from "./components/Media";
+import Sum from "./components/Sum";
 
 //styles
 import { GlobalStyle, Flex } from "./assets/global";
@@ -13,15 +15,9 @@ function App() {
       <h5>Exercpicio React-Redux</h5>
       <Interval />
       <Flex>
-        <Card colors="green" title="Card">
-          Ola familia
-        </Card>
-        <Card colors="purple" title="Card">
-          Ola familia
-        </Card>
-        <Card colors="blue" title="Card">
-          Ola familia
-        </Card>
+        <Media>Ola familia</Media>
+        <Sum>Ola familia</Sum>
+        <Draw>Ola familia</Draw>
       </Flex>
       <GlobalStyle />
     </>
