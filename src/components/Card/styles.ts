@@ -18,6 +18,8 @@ export const Header = styled.div<IHeaderAndContent>`
   display: flex;
   justify-content: center;
 
+  font-size: 25px;
+
   background: ${(props) => (props.activeColor)};
 
   span {
