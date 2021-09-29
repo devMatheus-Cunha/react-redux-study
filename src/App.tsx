@@ -13,10 +13,10 @@ function App() {
       <h5>Exercpicio React-Redux</h5>
       <Interval />
       <Flex>
-        <Card colors="blue" title="Card">
+        <Card colors="green" title="Card">
           Ola familia
         </Card>
-        <Card colors="blue" title="Card">
+        <Card colors="purple" title="Card">
           Ola familia
         </Card>
         <Card colors="blue" title="Card">
