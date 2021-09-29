@@ -1,4 +1,9 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+
+export const Flex = styled.div`
+  display: flex;
+  gap: 0.5rem;
+`;
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -22,8 +27,8 @@ export const GlobalStyle = createGlobalStyle`
     text-align: center;
     font-size: 2rem;
     font-family: Oswald;
-  color: #FFF;
-  margin: 30px;
+    color: #FFF;
+    margin: 30px;
   }
   
   body, input, textarea, button {
