@@ -1,8 +1,13 @@
 import React from "react";
+
+// components
 import Card from "../Card";
 
-import { Container } from "./styles";
+// interface
 import { IIntervalProps } from "../shared/interface";
+
+// styles
+import { Container } from "./styles";
 
 const Interval = ({ min, max, onChangeMin, onChangeMax }: IIntervalProps) => {
   return (

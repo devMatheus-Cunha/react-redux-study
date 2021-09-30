@@ -1,5 +1,8 @@
 import React from "react";
+
+//components
 import Card from "../Card";
+
 // interface
 import { IProps } from "../shared/interface";
 const Media = ({ min, max }: IProps) => {
