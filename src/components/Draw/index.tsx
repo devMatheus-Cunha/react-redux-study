@@ -1,14 +1,18 @@
 import React from "react";
 import Card from "../Card";
 
-const Draw: React.FC = () => {
+// interface
+import { IProps } from "../shared/interface";
+
+const Draw = ({ min, max }: IProps) => {
+  const random = (Math.random() * (max - min) + min);
   return (
-      <Card colors="green" title="Sorteio de um numero">
-        <span>
-          <span>Resultado:</span>
-          <strong>9</strong>
-        </span>
-      </Card>
+    <Card colors="green" title="Sorteio de um numero">
+      <span>
+        <span>Resultado:</span>
+        <strong>{random.toFixed(0)}</strong>
+      </span>
+    </Card>
   );
 };
 
