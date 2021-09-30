@@ -3,16 +3,12 @@ import React from "react";
 // components
 import Card from "../Card";
 
-// interface
-import { IProps } from "../shared/interface";
-
-const Draw = ({ min, max }: IProps) => {
-  const random = (Math.random() * (max - min) + min);
+const Draw = ( ) => {
   return (
     <Card colors="green" title="Sorteio de um numero">
       <span>
         <span>Resultado:</span>
-        <strong>{random.toFixed(0)}</strong>
+        <strong>20</strong>
       </span>
     </Card>
   );

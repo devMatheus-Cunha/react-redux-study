@@ -3,14 +3,12 @@ import React from "react";
 //components
 import Card from "../Card";
 
-// interface
-import { IProps } from "../shared/interface";
-const Media = ({ min, max }: IProps) => {
+const Media = ( ) => {
   return (
       <Card colors="red" title="Media dos numeros">
         <span>
           <span>Resultado:</span>
-          <strong>{(min + max) / 2}</strong>
+          <strong>10</strong>
         </span>
       </Card>
   );
