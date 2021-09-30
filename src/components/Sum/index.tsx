@@ -1,12 +1,15 @@
 import React from "react";
 import Card from "../Card";
 
-const Sum: React.FC = () => {
+// interface
+import { IProps } from "../shared/interface";
+
+const Sum = ({ min, max }: IProps) => {
   return (
       <Card colors="blue" title="Soma dos numeros">
         <span>
           <span>Resultado:</span>
-          <strong>10</strong>
+          <strong>{min + max}</strong>
         </span>
       </Card>
   );
