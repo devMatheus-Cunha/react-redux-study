@@ -1,17 +1,26 @@
 import React from "react";
+import { connect } from "react-redux";
 
 // components
 import Card from "../Card";
 
-const Draw = ( ) => {
+const Draw = ({ min, max }: any) => {
+  const random = Math.random() * (max - min) + min;
+
   return (
     <Card colors="green" title="Sorteio de um numero">
       <span>
         <span>Resultado:</span>
-        <strong>20</strong>
+        <strong>{parseInt(random.toFixed(2))}</strong>
       </span>
     </Card>
   );
 };
+const mapStateToPros = (state: any) => {
+  return {
+    min: state.numbers.min,
+    max: state.numbers.max,
+  };
+};
 
-export default Draw;
+export default connect(mapStateToPros)(Draw);
