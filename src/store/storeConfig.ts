@@ -2,12 +2,16 @@ import { createStore, combineReducers } from "redux";
 
 const reducers = combineReducers({
   numbers: function (state: any, action: any) {
-    console.log(action)
     switch (action.type) {
       case "CHANGE_MIN_NUMBER":
         return {
           ...state,
           min: action.payload,
+        };
+      case "CHANGE_MAX_NUMBER":
+        return {
+          ...state,
+          max: action.payload,
         };
       default:
         return {
